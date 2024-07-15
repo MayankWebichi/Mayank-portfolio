@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Mayank 
+        <span>Webichi</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home"id="home">
+            <div class="home-img">
+                <img src="image.jpg"">
+            </div>
+            <div class="home-content">
+                <h1>It's <span>Mayank Webichi</span></h1>
+                <h3 class="text-animation">
+                    I'm a <span></span>
+                </h3>
+
+                
+                <p>
+                    Hi, I'm <strong>Mayank <span>Sharma</span> </strong> - a web developer, UX designer, and your friendly tech enthusiast. I love turning ideas into beautiful and functional digital experiences.
+                  </p>
+                  <p>
+                    Let's create something amazing together!
+                  </p>
+                
+                
+                <div class="social-icons">
+                    <a  href= "https://t.me/mayankwebichi" class="bx bxl-telegram"></a>
+                    <a href="https://www.instagram.com/mayankwebichi" class="bx bxl-instagram-alt"></a>
+                    <a href="https://github.com/MayankWebichi" class="bx bxl-github"></a>
+                <a href="https://x.com/MayankWebichi"  class="bx bxl-twitter"></a>
+                </div>
+               
+                
+    <section>
+                    <div class="about-content">
+                        <h3 class="text-animation">
+                            <span></span>
+                        </h3>
+                        <p>I am web developer and UX designer passionate about creating beautiful and user-friendly websites. I combine creativity with technical expertise to deliver seamless digital experiences. Let's turn your ideas into reality!
+
+                        </p>
+                        <a href="# " class="btn ">read more</a>
+                    </div>
+                    <div class="about-img">
+                        <img src="img 3.jpg">
+                    </div>
+
+
+    </section>
+                    
+    <section class="contact" id="contact">
+
+        <h2 class="heading">contact <span>Me</span></h2>
+        
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                
+
+            </div>  
+            <div class="input-box">
+                <input type="number"
+                placeholder="Phone number" >
+                <input type="Text" placeholder="Subject">
+
+
+
+            </div>
+            <textarea name="" id="" cols="30"
+            rows="10" placeholder="Your Message">
+            </textarea>
+            <input type="Submit" value="Send Message" class="btn">
+
+        </form> 
+    <script src="script.js"></script>
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init("service_6w7msexD");
+      })();
+  
+      function sendEmail(event) {
+        event.preventDefault();
+  
+        emailjs.sendForm('service_6w7msex', 'template_0j4nwwn', event.target)
+          .then(function() {
+            alert('Message sent successfully!');
+          }, function(error) {
+            alert('Failed to send the message, please try again.');
+          });
+      }
+    </script>   
+    
+</body>
+<footer class="footer">
+    <p>&copy; 2024 Mayank Webichi. All rights reserved.</p>
+</footer>
+
+</html>
